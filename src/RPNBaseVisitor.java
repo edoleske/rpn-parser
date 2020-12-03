@@ -75,6 +75,15 @@ public class RPNBaseVisitor extends RPNCalculatorBaseVisitor<Double> {
     public Double visitTangent(RPNCalculatorParser.TangentContext ctx) { return Math.tan(visit(ctx.trig())); }
 
     @Override
+    public Double visitCosecant(RPNCalculatorParser.CosecantContext ctx) { return (1 / Math.sin(visit(ctx.trig()))); }
+
+    @Override
+    public Double visitSecant(RPNCalculatorParser.SecantContext ctx) { return (1 / Math.cos(visit(ctx.trig()))); }
+
+    @Override
+    public Double visitCotangent(RPNCalculatorParser.CotangentContext ctx) { return (1 / Math.tan(visit(ctx.trig()))); }
+
+    @Override
     public Double visitParenthesis(RPNCalculatorParser.ParenthesisContext ctx) {
         return visit(ctx.addOrSub());
     }

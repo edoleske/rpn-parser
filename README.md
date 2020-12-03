@@ -9,7 +9,7 @@ The following operators are supported:
 - Division (/)
 - Exponents (^)
 - Variable Assignment (=)
-- Basic Trigonometric Functions (sin, cos, tan)
+- Basic Trigonometric Functions (sin, cos, tan, csc, sec, cot)
 - Parenthesis (())
 
 ### root (01.1):

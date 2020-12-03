@@ -3,6 +3,9 @@ grammar RPNCalculator;
 SIN   : 'sin';
 COS   : 'cos';
 TAN   : 'tan';
+CSC   : 'csc' | 'asin';
+SEC   : 'sec' | 'acos';
+COT   : 'cot' | 'atan';
 ADD   : '+';
 SUB   : '-';
 MUL   : '*';
@@ -48,6 +51,9 @@ trig
     : trig SIN   # Sine
     | trig COS   # Cosine
     | trig TAN   # Tangent
+    | trig CSC   # Cosecant
+    | trig SEC   # Secant
+    | trig COT   # Cotangent
     | atom     # ToNegate
     ;
 
