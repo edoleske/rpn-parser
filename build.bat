@@ -9,4 +9,4 @@ javac -classpath ".\lib\antlr-4.7.1-complete.jar" build\*.java
 
 echo "Successfully compiled"
 
-java -cp ".\build;.\lib\antlr-4.7.1-complete.jar" RPNParse
+java -cp ".\build;.\lib\antlr-4.7.1-complete.jar" RPNParse test.data
