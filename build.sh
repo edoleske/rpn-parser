@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir build
+mkdir -p build
 
 cd src
 java -Xmx500M -cp "../lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool RPNCalculator.g4 -no-listener -visitor -o ../build
