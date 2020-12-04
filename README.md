@@ -13,8 +13,7 @@ The following operators are supported:
 - Parenthesis (())
 
 ### root (01.1):
-- build.sh : Bash script used to build program from source files, uses javac and java system commands
-- run.sh : Bash script used to execute program after compilation
+- build.sh : Bash script used to compile and execute program, uses javac and java system commands
 - test.data : List of RPN expressions that program parses and evaluates
 ### src:
 - RPNParse.java : The entry point of the execution, which iterates over expressions given per line in test.data
