@@ -2,6 +2,16 @@
 
 This is a parser for expressions in Reverse Polish Notation using the ANTLR4 language recognition framework. Bash scripts are designed to be run from project root directory (01.1).
 
+### Usage:
+The build scripts supplied will compile and execute the program using "test.data" as a list of expressions. If you would like to supply your own expressions after compilation, either add them to that file or run the following command on UNIX systems:
+```
+java -cp build:lib/antlr-4.7.1-complete.jar RPNParse [PATH-TO-FILE]
+```
+And on Windows systems:
+```
+java -cp ".\build;.\lib\antlr-4.7.1-complete.jar" RPNParse [PATH-TO-FILE]
+```
+
 The following operators are supported:
 - Addition (+)
 - Subtraction (-)
@@ -14,6 +24,7 @@ The following operators are supported:
 
 ### root (01.1):
 - build.sh : Bash script used to compile and execute program, uses javac and java system commands
+- build.bat : Above script that works on Windows systems
 - test.data : List of RPN expressions that program parses and evaluates
 ### src:
 - RPNParse.java : The entry point of the execution, which iterates over expressions given per line in test.data
