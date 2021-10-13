@@ -1,6 +1,6 @@
 # RPN-Parser
 
-This is a parser for expressions in Reverse Polish Notation using the ANTLR4 language recognition framework. Bash scripts are designed to be run from project root directory (01.1).
+This is a parser for expressions in Reverse Polish Notation using the ANTLR4 language recognition framework. This project was created and submitted as an assignment for a Computer Languages course taken at UA Little Rock. Bash scripts are designed to be run from project root directory (01.1).
 
 ### Usage:
 The build scripts supplied will compile and execute the program using "test.data" as a list of expressions. If you would like to supply your own expressions after compilation, either add them to that file or run the following command on UNIX systems:
